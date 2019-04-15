@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BarcaSchedule</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic"
+		rel="stylesheet">
+	<link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+	<div class="app">
+		<header>
+			<div class="general-info">
+				<img class="general-info__competition-logo" src="" alt="competition">
+				<div class="general-info__tour"></div>
+				<div class="general-info__date"></div>
+			</div>
+			<div class="main-info">
+				<div class="main-info__first-team-container">
+					<div class="main-info__first-team main-info__text"></div>
+					<img src="" alt="first-team-logo" class="main-info__first-team--logo">
+				</div>
+				<div class="main-info__time">
+					Начало матча (МСК)
+					<span></span>
+				</div>
+				<div class="main-info__second-team-container">
+					<img src="" alt="second-team-logo" class="main-info__second-team--logo">
+					<div class="main-info__second-team main-info__text"></div>
+				</div>
+
+			</div>
+			<div class="counter">
+				<div>Время до следующего матча</div>
+				<div class="counter__days tick">
+					<span class="tick-text">Дней</span>
+					<span class="counter__days--field tick-field">00</span>
+				</div>
+				<div class="counter__hours tick">
+					<span class="tick-text">Часов</span>
+					<span class="counter__hours--field tick-field">00</span>
+				</div>
+				<div class="counter__minutes tick">
+					<span class="tick-text">Минут</span>
+					<span class="counter__minutes--field tick-field">00</span>
+				</div>
+				<div class="counter__seconds tick">
+					<span class="tick-text">Секунд</span>
+					<span class="counter__seconds--field tick-field">00</span>
+				</div>
+			</div>
+		</header>
+		<h1 class="section-header">Расписание ближайших матчей Барселоны</h1>
+		<section id="upcomingMatches">
+			<div class="table">
+				<!-- Content generated-->
+			</div>
+		</section>
+		<section id="leagueTable">
+			<h1 class="section-header">Турнирная таблица</h1>
+			<div class="leagueTable">
+				<span class="updated"></span>
+				<span>Чемпионат Испании</span>
+				<div class="leagueTable__row leagueTable__hat">
+					<div class="hat__position">Позиция</div>
+					<div class="hat__team">Команда</div>
+					<div class="hat__points">Очки</div>
+					<div class="hat__matches-count">Матчей сыграно</div>
+					<div class="hat__wins">Победы</div>
+					<div class="hat__draws">Ничьи</div>
+					<div class="hat__loses">Поражения</div>
+					<div class="hat__goals-scored">Голов забито</div>
+					<div class="hat__goals-get">Голов пропущено</div>
+					<div class="hat__goals-dif">Разница мячей</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="barca">
+				<img src="./img/FC Barcelona.png" alt="barca logo" class="barca__logo">
+				<div class="barca__text">fc barcelona</div>
+			</div>
+			<div class="policy">© BarcaSchedule - 2019. Приложение разработал - Борщ Дмитрий</div>
+		</footer>
+	</div>
+	<script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
